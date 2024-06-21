@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rose_textbg {
+    @apply border-l-4 border-rose-800 bg-gradient-to-r from-rose-600/35 to-rose-600/5
+}
+
+.cyan_textbg {
+    @apply border-l-4 border-cyan-600 bg-gradient-to-r from-cyan-600/35 to-cyan-600/5
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    @apply absolute inset-0 bg-gradient-to-b from-black/0 to-[#0F0F0F];
+    content: ""
+}

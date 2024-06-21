@@ -1,7 +1,12 @@
+import Benefits from "@/components/benefits/Benefits";
+import Hero from "@/components/hero/Hero";
+
 export default function Home() {
-  return (
-    <div className="flex item-center justify-center w-screen h-screen bg-gradient-to-r from-green-200/20 to-green-300">
-      <h2>Content Lab</h2>
+  return ( 
+    <div>
+      <Hero />
+      <Benefits />
+      <div className="w-20 md:w-40 h-[60vw] -rotate-45 bg-slate-600/30 rounded-full absolute top-[20rem] md:top-0 left-[6rem] blur-[40px] md:blur-[50px] " />
     </div>
   );
 }

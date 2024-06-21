@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Logo from "@/components/Logo";
+import Header from "@/components/Header";
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
@@ -16,10 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={dm_sans.className}>
-        <Logo />
-        {children}</body>
+    <html lang="en" className={dm_sans.className}>
+      <body className="bg-[#0F0F0F] text-white">
+      <Header />
+        <main className="min-h-screen">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
