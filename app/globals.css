@@ -18,3 +18,15 @@
     @apply absolute inset-0 bg-gradient-to-b from-black/0 to-[#0F0F0F];
     content: ""
 }
+
+.header_text {
+    @apply text-3xl md:text-5xl text-center
+}
+
+.contain {
+    @apply max-w-7xl mx-auto mt-24 md:mt-40 text-center
+}
+
+hr {
+    @apply  border-gray-300/10 m-6 w-full mx-auto
+}

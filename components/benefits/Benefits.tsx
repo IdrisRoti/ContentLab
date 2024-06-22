@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Benefits() {
   return (
-    <section className="max-w-7xl mx-auto mt-24 md:mt-40 text-center">
-      <h2 className="text-3xl md:text-5xl text-center">
+    <section className="contain">
+      <h2 className="header_text">
         Say <span className="cyan_textbg">goodbye</span> to writer’s block
       </h2>
       <div className="grid md:grid-cols-3 grid-rows-subgrid gap-12 mt-16 px-4 md:px-0">
