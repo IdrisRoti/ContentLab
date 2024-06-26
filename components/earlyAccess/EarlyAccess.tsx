@@ -13,7 +13,7 @@ export default function EarlyAccess() {
         <span className="text-white">the future of copywritting</span>. Get
         early access.
       </p>
-      <form className="gradient-border md:border border-gray-300/20 w-full md:w-fit mx-auto rounded-full p-2 gap-3 md:gap-2 flex flex-col md:flex-row items-center justify-between font-semibold ">
+      <form className="gradient-border md:border border-gray-300/20 md:w-auto max-w-2xl mx-auto rounded-full p-2 gap-3 md:gap-2 flex flex-col md:flex-row items-center justify-between font-semibold ">
         <div className="input flex ">
           <label htmlFor="name" className="mr-2">Name</label>
           <input id="name" type="text" />
@@ -22,9 +22,9 @@ export default function EarlyAccess() {
           <label htmlFor="email" className="mr-2">Email</label>
           <input id="email" type="email" />
         </div>
-        <button type="button" className="border border-gray-300/20 rounded-full px-3 py-1.5 bg-gray-300/20 hover:bg-white hover:text-black text-gray-300 w-full transition-all duration-500">Join Now</button>
+        <button type="button" className="border border-gray-300/20 rounded-full px-3 py-1.5 bg-gray-300/20 hover:bg-white hover:text-black text-gray-300 w-full md:w-auto  transition-all duration-500">Join Now</button>
       </form>
-      <div className="absolute top-[40%] left-[30%] md:left-[40%] -z-10 h-1/2 aspect-square rounded-full bg-rose-600/20 blur-[60px] "/>
+      <div className="absolute top-[40%] left-[30%] md:left-[40%] -z-10 h-1/2 aspect-square rounded-full bg-rose-600/20 blur-[60px]"/>
     </section>
   );
 }
