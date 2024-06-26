@@ -16,7 +16,7 @@ export default function PriceCard({ priceDetails, priceType }: PriceCardTypes) {
   return (
     <article
       key={id}
-      className={`border border-gray-300/10 p-4 md:p-6 rounded-2xl text-left hover:border-gray-300/40 transition ${
+      className={`border border-gray-300/10 p-4 md:p-6 rounded-2xl text-left hover:border-gray-300/40 transition-all duration-500 ${
         type === "Starter" && "-order-1 md:order-none"
       }`}
     >

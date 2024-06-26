@@ -20,7 +20,7 @@
 }
 
 .header_text {
-    @apply text-3xl md:text-5xl text-center
+    @apply text-3xl md:text-6xl text-center
 }
 
 .contain {
@@ -30,3 +30,30 @@
 hr {
     @apply  border-gray-300/10 m-6 w-full mx-auto
 }
+
+input {
+    @apply bg-transparent w-full;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.input{
+    @apply border border-gray-300/50 rounded-full px-3 py-2 md:py-1.5 bg-gray-300/10 w-full
+}
+
+.gradient-border {
+    position: relative;
+  }
+  
+  .gradient-border::before {
+    @apply absolute -inset-[1.5px] -z-10 bg-gradient-to-r from-transparent from-30% via-white to-transparent to-70%;
+    content: ""
+  }
+
+  .gradient-border::after {
+    @apply absolute -inset-[1px] -z-10 bg-[#0F0F0F] text-white;
+    content: ""
+  }

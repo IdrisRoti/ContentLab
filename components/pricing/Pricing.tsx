@@ -10,7 +10,7 @@ export default function Pricing() {
   const priceTypes = ["Monthly", "Yearly"];
 
   return (
-    <section className="contain px-3 md:px-0">
+    <section className="contain px-6 md:px-0">
       <h2 className="header_text">
         Choose a <span className="rose_textbg">pricing</span> plan
       </h2>
